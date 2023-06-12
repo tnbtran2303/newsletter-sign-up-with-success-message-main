@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(234,29%,20%);
+ }
+
+ .container {
+    display: flex;
+    width: 700px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+ }
+
+ .left {
+    width: 60%;
+ }
+
+ .right {
+    width: 40%;
+ }
+
+ .right img {
+    width: 100%; 
+    
+ }
+
+ h1 {
+    font-size: 40px;
+ }
+
+ ul {
+    list-style-image: url(../assets/images/icon-list.svg);
+ }
+
+ li {
+    margin-bottom: 10px;
+ }
+
+ form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+ }
+
+ label {
+    margin-bottom: 10px;
+ }
+
+ input {
+    padding: 10px 20px;
+    font-family: inherit;
+    outline: none;
+    border: 1px solid hsl(231, 7%, 60%);
+ }
+
+ button {
+    font-family: inherit;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: hsl(234,29%,20%);
+    cursor: pointer;
+ }
+
+ .hide {
+    display: none;
+ }
+
+ .success-card {
+    background-color: white;
+    width: 400px;
+    padding: 40px;
+    border-radius: 5px;
+
+  }
+  .success-card h1 {
+    font-size: 40px;
+  }
+  .icon-success-card {
+    width: 50px;
+  }
+  .success-card button {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column-reverse;
+      width: 95%;
+      padding: 0;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .container h1 {
+      font-size: 30px;
+    }
+    .left {
+      width: 100%;
+      padding: 20px;
+    }
+    .right {
+      width: 100%;
+    }
+    .right img {
+      content: url("../assets/images/illustration-sign-up-mobile.svg");
+    }
+    form {
+      width: 90%;
+    }
+    .csuccess-card {
+      min-height: 100vh;
+    }
+}
